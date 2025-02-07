@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits the text color from the parent element */
+  font-weight: inherit; /* Inherits font weight from the parent element */
+  font-style: inherit; /* Inherits font style from the parent element */
+  font-size: inherit; /* Inherits font size from the parent element */
+  cursor: default; /* Changes the cursor to default (instead of pointer) */
+  cursor: pointer;
+}
+
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none; /* Removes underline on hover, active, visited, and focus states */
+  color: inherit; /* Inherits the text color from the parent element */
+  background-color: transparent; /* Removes any background color */
+  outline: none; /* Removes the outline on focus */
+}
+body {
+  margin: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background: black;
+  color: white;
+}
+header h1 {
+  font-size: 1.5rem;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+main section {
+  padding: 1rem 2rem;
+  background: #e4e7e6;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
+  margin: 2rem;
+}
+
+main section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+}
+main section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: start;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+form label {
+  font-size: 0.95rem;
+}
+form select {
+  width: 100%;
+  padding: 5px;
+  font-size: 0.85rem;
+  border: 2px solid #b7b7b7;
+  border-radius: 10px;
+  background-color: #fff;
+  appearance: none; /* Removes default arrow in some browsers */
+  -webkit-appearance: none; /* Removes default arrow in Safari */
+  -moz-appearance: none; /* Removes default arrow in Firefox */
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+form button {
+  display: flex;
+  justify-content: center;
+  padding: 0.35rem 1rem;
+  border-radius: 1rem;
+  border: 2px solid #ffffff;
+  background: green;
+  color: white;
+  width: fit-content;
+  justify-self: center;
+  cursor: pointer;
+}
+
+main section #result {
+  margin: 1rem;
+  display: block;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e7e7e7;
+  padding: 0.5rem;
+}
