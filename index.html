@@ -3,21 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pay Commission Converter</title>
+    <link rel="icon" type="image/x-icon" href="./fav.ico">
+    <title>Salary Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Pay Commission Calculator</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="converter.html">Converter</a></li>
-                <li><a href="faq.html">FAQs</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="logo">
+            <img src="./logo.png" alt="Pay Commission Calculator Logo">
+            <span>Salay calculator</span>
+        </div>
     </header>
     <main>
         <section class="calculator">
@@ -35,6 +30,7 @@
                 <div class="form-group">
                     <label for="payLevel">Pay Level:</label>
                     <select name="PayLevel" id="payLevel">
+                        <option value="">-- Select Pay Level --</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -58,6 +54,7 @@
                 <div class="form-group">
                     <label for="city">City Category:</label>
                     <select id="city" name="city" required>
+                        <option value="">-- Select City Category --</option>
                         <option value="X">X (30% HRA)</option>
                         <option value="Y">Y (20% HRA)</option>
                         <option value="Z">Z (10% HRA)</option>

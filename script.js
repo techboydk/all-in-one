@@ -3,6 +3,7 @@ document.getElementById('salaryForm').addEventListener('submit', function (e) {
     console.log("function initialized")
     // Get input values
     const Commission = document.getElementById('commission_list').value;
+    const ResultContainer = document.getElementById('result');
     const payLevel = document.getElementById('payLevel').value;
     const city = document.getElementById('city').value;
     let basicPay = 0;
@@ -72,7 +73,7 @@ document.getElementById('salaryForm').addEventListener('submit', function (e) {
                 basicPay = 250000;
                 break;
             default:
-                basicPay = 0;
+                alert("Select a valid pay Level");
         }
     } else{
         alert("Select commission from commission Number");
@@ -103,4 +104,5 @@ document.getElementById('salaryForm').addEventListener('submit', function (e) {
     document.getElementById('hraResult').textContent = hra.toFixed(2);
     document.getElementById('daResult').textContent = da.toFixed(2);    
     document.getElementById('netSalary').textContent = netSalary.toFixed(2);
+    ResultContainer.style.display = 'block';
 });
