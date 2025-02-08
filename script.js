@@ -81,13 +81,13 @@ document.getElementById('salaryForm').addEventListener('submit', function (e) {
     // Calculate HRA based on city
     switch (city) {
         case 'X':
-            hra = basicPay * 0.24;
+            hra = basicPay * 0.3;
             break;
         case 'Y':
-            hra = basicPay * 0.16;
+            hra = basicPay * 0.2;
             break;
         case 'Z':
-            hra = basicPay * 0.08;
+            hra = basicPay * 0.1;
             break;
     }
 
