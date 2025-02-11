@@ -1,30 +1,7 @@
 * {
-  margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-a {
-  text-decoration: none; /* Removes underline */
-  color: inherit; /* Inherits the text color from the parent element */
-  font-weight: inherit; /* Inherits font weight from the parent element */
-  font-style: inherit; /* Inherits font style from the parent element */
-  font-size: inherit; /* Inherits font size from the parent element */
-  cursor: default; /* Changes the cursor to default (instead of pointer) */
-  cursor: pointer;
-}
-
-a:hover,
-a:active,
-a:visited,
-a:focus {
-  text-decoration: none; /* Removes underline on hover, active, visited, and focus states */
-  color: inherit; /* Inherits the text color from the parent element */
-  background-color: transparent; /* Removes any background color */
-  outline: none; /* Removes the outline on focus */
-}
-body {
   margin: 0;
+  box-sizing: border-box;
 }
 header {
   display: flex;
@@ -41,20 +18,26 @@ header .logo {
   font-size: 1.5rem;
   font-style: oblique;
 }
-.logo h1{
+.logo h1 {
   font-size: 1.25rem;
 }
-.logo img{
+.logo img {
   width: 25px;
   height: 25px;
 }
 
 main {
   display: flex;
-  justify-content: center;
   min-height: 100vh;
+  flex-direction: column;
+  margin: 1rem;
 }
-main section {
+main section.calculator {
+  display: flex;
+  margin: 2rem;
+  justify-content: center;
+}
+main section.calculator .container {
   padding: 1rem 2rem;
   background: #e4e7e6;
   border-radius: 1rem;
@@ -62,7 +45,7 @@ main section {
   flex-direction: column;
   justify-content: center;
   height: fit-content;
-  margin: 2rem;
+  width: fit-content;
 }
 
 main section h2 {
