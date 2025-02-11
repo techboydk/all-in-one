@@ -41,21 +41,12 @@ header .logo {
   font-size: 1.5rem;
   font-style: oblique;
 }
+.logo h1{
+  font-size: 1.25rem;
+}
 .logo img{
   width: 25px;
   height: 25px;
-}
-header nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  gap: 1.5rem;
 }
 
 main {
